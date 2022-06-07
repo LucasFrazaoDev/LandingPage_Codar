@@ -1,0 +1,57 @@
+/* Configurações globais */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* <------ Header ------> */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    text-decoration: none;
+    align-self: center;
+    font-size: 3em;
+}
+
+#navbar {
+    justify-content: flex-end;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 4.5em;
+}
+
+#navbar li {
+    margin: 10px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #000;
+}
+
+#navbar li button {
+    border-radius: 12px;
+    width: 120px;
+    height: 40px;
+    background-color: #D6000D;
+    color: #FFF;
+}
+
+#navbar li button:hover {
+    cursor: pointer;
+    background-color: #86030c;
+    transition: 0.5s all;
+}
+
+/* <------ Conteudo ------> */
+
+.grid-container {
+    display: grid;
+}
