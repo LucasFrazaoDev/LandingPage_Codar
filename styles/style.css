@@ -3,6 +3,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* <------ Header ------> */
 nav {
     display: flex;
@@ -13,21 +18,19 @@ nav {
     text-decoration: none;
     align-self: center;
     font-size: 3em;
-}
-
-#navbar {
-    justify-content: flex-end;
+    font-weight: 700;
+    margin-left: 0.5em;
 }
 
 #navbar ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    margin-right: 4.5em;
+    margin-right: 2em;
 }
 
 #navbar li {
-    margin: 10px;
+    margin: 15px;
 }
 
 #navbar li a {
@@ -38,10 +41,12 @@ nav {
 
 #navbar li button {
     border-radius: 12px;
-    width: 120px;
+    width: 150px;
     height: 40px;
     background-color: #D6000D;
+    border: none;
     color: #FFF;
+    font-size: 0.8em;
 }
 
 #navbar li button:hover {
@@ -50,8 +55,159 @@ nav {
     transition: 0.5s all;
 }
 
-/* <------ Conteudo ------> */
+/* <------ Conteudo global ------> */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
 
 .grid-container {
     display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin: 0 auto 2em auto;
+}
+
+/* <------ First Section ------> */
+
+#first-section img {
+    max-width: 450px;
+}
+
+#first-section h1 {
+    font-size:  1.5em;
+}
+
+#first-section button {
+    background-color: #D6000D;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    margin-top: 1em;
+}
+
+#first-section button:hover {
+    cursor: pointer;
+    background-color: #86030c;
+    transition: 0.5s all;
+}
+
+/* <------ Second Section ------> */
+#second-section {
+    margin-top: 8em;
+    margin-bottom: 0.5em;
+}
+
+
+#second-section ul {
+    list-style-type: none;
+    font-size: 1.8em;
+}
+
+#second-section ul li {
+    margin: 1em;
+}
+
+#second-section ul li span {
+    margin-left: 1em;
+}
+
+#second-section .fa-solid {
+    color: #D6000D;
+}
+
+#second-section img {
+    max-width: 450px;
+}
+
+#image {
+    margin-left: 6em;
+}
+
+/* <------ Third Section ------> */
+#third-section div {
+    margin-left: 5em;
+}
+
+#third-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+#third-section input {
+    border: none;
+    border-radius: 12px;
+    height: 50px;
+    width: 250px;
+    padding-left: 2em;
+    background-color: #e3e3e3;
+}
+
+#third-section button {
+    margin-left: 0.2em;
+    border: none;
+    border-radius: 12px;
+    height: 50px;
+    width: 250px;
+    background-color: #D6000D;
+    color: #FFF;
+}
+
+#third-section button:hover {
+    cursor: pointer;
+    background-color: #86030c;
+    transition: 0.5s all;
+}
+
+/* <------ Forth Section ------> */
+#forth-section {
+    margin-top: 8em;
+    margin-bottom: 3em;
+}
+
+#forth-section .comments-section {
+    width: 90%;
+    height: 90%;
+    background-color: #e3e3e3;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+#forth-section .red-circle {
+    margin: 1em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#forth-section .comments-description {
+    width: 100%;
+}
+
+#forth-section .comments-description p {
+    width: 100%;
+}
+
+#forth-section .comments-description h4, h6 {
+    margin: 0;
+}
+
+/* <------ Footer ------> */
+footer {
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+}
+
+.grid-container-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 3em 2em 4em 2em;
+}
+
+footer .fa-brands {
+    color: #D6000D;
 }

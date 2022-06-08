@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 
     <!-- Estilo customizado -->
     <link rel="stylesheet" href="styles/style.css">
@@ -31,7 +31,7 @@
 <body>
     <header>
         <nav>
-            <a id="logo" href=""><span style="color: #D6000D;"><em>Color</em></span>.</a>
+            <a id="logo" href=""><span style="color: #D6000D;"><em>Codar</em></span>.</a>
             <div id="navbar">
                 <ul>
                     <li>
@@ -50,49 +50,56 @@
             </div>
         </nav>
     </header>
-    <main class="grid-container">
-        <section>
+    <main>
+        <!-- First Section -->
+        <section class="grid-container" id="first-section">
             <div>
                 <img src="assets/video_call.png" alt="">
             </div>
-            <div>
-                <h1>Alavanque seu negócio com um Website incrível</h1>
+            <div style="margin-left: 15em;">
+                <h1>Alavanque seu negócio com um <br><span style="font-size: 2.2em; color:#D6000D">Website incrível</span></h1>
                 <button>Solicitar orçamento</button>
             </div>
         </section>
-        <section>
+        <!-- Second Section -->
+        <section class="grid-container" id="second-section">
             <div>
                 <ul>
-                    <li>Dominio personalizado</li>
-                    <li>Hospedagem</li>
-                    <li>Site responsivo</li>
-                    <li>Rede sociais</li>
-                    <li>Chat online</li>
-                    <li>Blog integrado</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Dominio personalizado</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Hospedagem</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Site responsivo</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Rede sociais</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Chat online</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Blog integrado</span></li>
                 </ul>
             </div>
-            <div>
+            <div id="image">
                 <img src="assets/coding_.png" alt="">
             </div>
+            
+        </section>
+        <!-- Third Section -->
+        <section class="grid-container" id="third-section">
             <div>
                 <h3>Nossa equipe está a disposição!</h3>
                 <input type="text" placeholder="Celular">
                 <button>Ligamos para você</button>
             </div>
         </section>
-        <section>
-            <div>
-                <div></div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro molestiae nihil similique totam
+        <!-- Forth Section -->
+        <section class="grid-container" id="forth-section">
+            <div class="grid-container comments-section">
+                <div class="red-circle"></div>
+                <div class="comments-description">
+                    <p>Lorem ipsum dolor sit amet consectetur, teste elit. Porro molestiae nihil similique totam
                         nostrum doloremque!</p>
                     <h4>Nome Próprio</h4>
                     <h6>atividade profissional</h6>
                 </div>
             </div>
-            <div>
-                <div></div>
-                <div>
+            <div class="grid-container comments-section">
+                <div class="red-circle"></div>
+                <div class="comments-description">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro molestiae nihil similique totam
                         nostrum doloremque!</p>
                     <h4>Nome Próprio</h4>
@@ -101,26 +108,26 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="grid-container-footer">
         <div>
-            <h2>Codar</h2>
+            <h1 style="font-size: 2.5em;"><em>Codar</em>.</h1>
             <p>Criamos webisites incríveis</p>
         </div>
         <div>
-            <h3>Sobre</h3>
-            <p>Amamos criar soluções e entregar sites incríveis</p>
+            <h2>Sobre</h2>
+            <p>Amamos criar soluções <br>e entregar sites incríveis</p>
         </div>
         <div>
-            <h3>Contato</h3>
-            <span>123 Av. Manjar - Nárnia</span>
-            <span>+55 96 2321-3131</span>
-            <span>contato@codar.com</span>
+            <h2>Contato</h2>
+            <p>123 Av. Manjar - Nárnia</p>
+            <p>+55 96 2321-3131</p>
+            <p style="text-decoration: underline;">contato@codar.com</p>
         </div>
         <div>
-            <h3>Redes sociais</h3>
-            <i class="fa-brands fa-facebook fa-3x"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <h2>Redes sociais</h2>
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
         </div>
     </footer>
 </body>
