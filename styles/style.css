@@ -3,7 +3,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     overflow-x: hidden;
 }
@@ -20,6 +21,12 @@ nav {
     font-size: 3em;
     font-weight: 700;
     margin-left: 0.5em;
+    color: #000;
+}
+
+#logo span {
+    font-style: italic;
+    color: #D6000D;
 }
 
 #navbar ul {
@@ -27,10 +34,12 @@ nav {
     display: flex;
     align-items: center;
     margin-right: 2em;
+    padding: 0;
 }
 
 #navbar li {
     margin: 15px;
+    margin-left: 2em;
 }
 
 #navbar li a {
@@ -57,7 +66,7 @@ nav {
 
 /* <------ Conteudo global ------> */
 main {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -69,26 +78,35 @@ main {
 }
 
 /* <------ First Section ------> */
+#image-first-section {
+    margin-left: 7em;
+}
 
 #first-section img {
     max-width: 450px;
 }
 
-#first-section h1 {
-    font-size:  1.5em;
+#budget-section {
+    margin-left: 6em;
+    margin-top: 3em;
 }
 
-#first-section button {
+#first-section h1 {
+    font-size: 2em;
+}
+
+#budget-section button {
     background-color: #D6000D;
     color: #FFF;
+    font-size: 1.5em;
     border: none;
-    border-radius: 20px;
-    width: 250px;
-    height: 40px;
+    border-radius: 12px;
+    width: 350px;
+    height: 50px;
     margin-top: 1em;
 }
 
-#first-section button:hover {
+#budget-section button:hover {
     cursor: pointer;
     background-color: #86030c;
     transition: 0.5s all;
@@ -100,10 +118,10 @@ main {
     margin-bottom: 0.5em;
 }
 
-
 #second-section ul {
     list-style-type: none;
     font-size: 1.8em;
+    margin-left: 2em;
 }
 
 #second-section ul li {
@@ -128,7 +146,7 @@ main {
 
 /* <------ Third Section ------> */
 #third-section div {
-    margin-left: 5em;
+    margin-left: 8em;
 }
 
 #third-section h3 {
@@ -168,46 +186,75 @@ main {
 }
 
 #forth-section .comments-section {
-    width: 90%;
+    width: 80%;
     height: 90%;
     background-color: #e3e3e3;
     border-radius: 12px;
-    padding: 5px;
+    margin-bottom: 0.5em;
 }
 
 #forth-section .red-circle {
-    margin: 1em;
-    width: 50px;
-    height: 50px;
+    margin: 1.5em;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color: red;
 }
 
 #forth-section .comments-description {
     width: 100%;
+    margin: 0.8em 1.8em 1.3em 0;
 }
 
 #forth-section .comments-description p {
-    width: 100%;
+    padding-top: 10px;
+    width: 90%;
+    font-size: 1.2em;
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 0.5em;
 }
 
-#forth-section .comments-description h4, h6 {
+#forth-section .comments-description h3,
+h5 {
     margin: 0;
 }
 
 /* <------ Footer ------> */
-footer {
-    background-color: #000;
-    color: #FFF;
-    display: flex;
-}
-
 .grid-container-footer {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    column-gap: 0;
     padding: 3em 2em 4em 2em;
 }
 
-footer .fa-brands {
+footer {
+    background-color: #000;
+    color: #FFF;
+}
+
+footer h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#footer-third-div a {
+    color: #FFF;
+}
+
+#footer-third-div a:hover {
+    color: #D6000D;
+}
+
+#footer-third-div a:active {
+    color: #86030c;
+}
+
+
+#footer-forth-div i {
+    margin: 0.2em;
+}
+
+#footer-forth-div .fa-brands {
     color: #D6000D;
 }
