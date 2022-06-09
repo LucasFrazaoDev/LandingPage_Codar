@@ -1,3 +1,8 @@
+<!-- Lucas Frazão -->
+Desafio de Landing Page do site DevChallenge, feito com HTML e CSS
+-------------------------------------
+-------------------------------------
+
 <br />
 <p align="center">
   <a href="http://www.freepik.com">
