@@ -24,6 +24,10 @@ nav {
     color: #000;
 }
 
+#navbar-small {
+    display: none;
+}
+
 #logo span {
     font-style: italic;
     color: #D6000D;
@@ -128,9 +132,6 @@ main {
     margin: 1em;
 }
 
-#second-section ul li span {
-    margin-left: 1em;
-}
 
 #second-section .fa-solid {
     color: #D6000D;
